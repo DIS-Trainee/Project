@@ -16,12 +16,12 @@ const routes = [
   },
   {
     path:'/singin',
-    name:'Singin',
+    name:'singin',
     component:()=>import('../views/SinginView.vue')
   },
   {
     path:'/singup',
-    name:'Singup',
+    name:'singup',
     component:()=>import('../views/SingupView.vue')
   }
 ]
