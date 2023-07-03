@@ -1,32 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/singin">Sing In</router-link> |
-    <router-link to="/singup">Sing Up</router-link> 
-  </nav>
-  <router-view/>
+  <div class="app">
+  <navigation/>
+</div>
+<router-view/>
 </template>
+<script>
+import Navigation from "./components/Navigation.vue"
+export default {
+  name:"App",
+  components: {
+    Navigation
+  },
+};
+</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="scss" >
+@import url("https://fonts.googleapis.com/css2?family=raleway:wght@400;500&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway",sans-serif;
+  font-weight: 400;
 }
-
-nav {
-  padding: 30px;
+.app {
+  min-height: 100vh;
+  position: relative;
+  background-color: #fff;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.continer{
+  padding: 0 20px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 </style>
