@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: () => import('../views/HomeView.vue')
+    // component: () => import('../views/HomeView.vue')
   },
   {
     path: '/about',
@@ -12,17 +12,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/AboutView.vue')
+    // component: () => import('../views/AboutView.vue')
   },
   {
     path:'/singin',
     name:'singin',
-    component:()=>import('../views/SinginView.vue')
+    // component:()=>import('../views/SinginView.vue')
   },
   {
     path:'/singup',
     name:'singup',
-    component:()=>import('../views/SingupView.vue')
+    // component:()=>import('../views/SingupView.vue')
   }
 ]
 
