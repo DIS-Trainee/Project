@@ -22,10 +22,9 @@
                                 d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" 
                             />
                             </svg>
-                            <span 
-                                class="text-2xl font-extrabold text-white">
-                                KKK
-                            </span>
+                            <router-link to="/home">
+                                <span class="text-2xl font-extrabold text-white">KKK</span>
+                            </router-link>
                         </a>
                         <!-- menu -->
                         <div class="hidden md:flex items-center space-x-1">
@@ -78,9 +77,6 @@
             <a href="" class="block py-2 px-4 hover:bg-indigo-700 hover:text-indigo-400 text-indigo-100 ">Setting</a>
         </div>
     </nav>
-    <div class="text-2xl font-extrabold text-center">
-        content
-    </div>
 </template>
 
 <script setup>
